@@ -1,0 +1,23 @@
+---
+layout: default
+---
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                {{ page.date | date_to_string }}
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title">{{ page.title }}</div>
+                    <div class="post-body">{{ content }}</div>
+					<div class="post-nav">
+				        {% if previous %}
+        					<a href="{{ previous.url }}" title="previous post">previous</a>
+    				    {% endif %}
+      
+	      				{% if next %}
+				        	{% if previous %}, {% endif %}<a href="{{ next.url }}" title="next post">next</a>
+      					{% endif %}
+					</div>
+                </div>
+            </div>
+

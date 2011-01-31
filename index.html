@@ -1,0 +1,16 @@
+---
+layout: default
+title: The Lotus Garden &middot; Projects and Musings of Kevin Richardson
+---
+{% for post in site.posts limit:5 %}
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                {{ post.date | date_to_string }}
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="{{ post.url }}" title="permalink">{{ post.title }}</a></div>
+                    <div class="post-body">{{ post.content }}</div>
+                </div>
+            </div>
+{% endfor %}

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Kevin Richardson's Projects & Neat Doo-Dads
+category: projects
+---
+            <div class="sg-35 sgParent">
+                <div class="spacer sg-2 borderRight">
+                </div>
+
+                <div class="post sg-25">
+                    <div class="post-title">Kevin Richardson's Projects</div>
+	    <div class="post-body">
+		    <h1><a href="magic/index.php" title="Miscellaneous Magic: the Gathering Applications">miscellaneous Magic:the Gathering applications</a></h1>
+<h1>Project of the Week</h1>
+<a href="http://kevin.triageworks.net/potw/2011/01/03/project-of-the-week-intro.html" title="Project of the Week Introduction">introduction</a>
+
+<ul>
+        {% for post in site.categories.potw %}
+	{% if post.title != "Project of the Week Introduction" %}
+	<li><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></li>
+	{% endif %}
+	{% endfor %}
+        </ul>
+</div>
+
+
+</div>
+            </div>

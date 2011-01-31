@@ -1,0 +1,13 @@
+---
+title: Archives of Kevin Richardson's Thoughts and Projects
+layout: default
+category: archives
+---
+<div class="spacer sg-2"></div>
+<div class="post sg-30">
+	<dt>
+	{% for post in site.posts %}
+		<dd><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></dd>
+	{% endfor %}
+	</dt>
+</div>
