@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Kevin Richardson" />
+	<meta http-equiv="description" content="The subjective and wonderful Internet playground of Kevin Richardson." />
+	<title>The Lotus Garden &middot; Projects and Musings of Kevin Richardson</title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" media="screen" >
+	<link href="//fonts.googleapis.com/css?family=Crimson+Text:regular" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="/style/squaregrid.css" media="all" />
+	<link rel="stylesheet" href="/style/main.css" media="all" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-21050532-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="container">
+			
+			<div class="sg-35 sgParent">
+				<div id="title" class="sg-35 borderLeft borderRight"><a href="http://kevin.triageworks.net" title="The Lotus Garden homepage">The Lotus Garden</a></div>
+				<div id="navigation" class="sg-35 borderLeft borderRight">
+					<div class="nav" id="aboutnav"><a href="about.html" title="about Kevin Richardson">about</a></div>
+					<div class="nav" id="projectsnav"><a href="projects.html" title="Kevin Richardon's projects">projects</a></div>
+					<div class="nav" id="archivesnav"><a href="archives.html" title="archives">archives</a></div><div class="nav"><a href="http://playground.triageworks.net/bkmrk/bkmrk.php" title="bkmrk">bkmrk</a></div>
+				</div>
+			</div>
+			
+		
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                07 Feb 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="/potw/2011/02/07/week-5%3A-a-secret-project.html" title="permalink">Week 5: A Secret Project</a></div>
+                    <div class="post-body"><p>This past week has been quite full of all sorts of projects and I am moderately bummed I didn&#8217;t release a new piece of code to the wild. However, perhaps this isn&#8217;t totally a bad thing as I&#8217;ve still been working on various things. In addition to projects for school, I&#8217;ve been working pretty heavily on a Flex AIR-based application for a secret project. Unfortunately I can&#8217;t currently say very much about the specifics of the project, but it&#8217;s sure to change the way you feel about ink!</p>
+
+<p>Although I&#8217;m not entirely sure of my project for the upcoming week, I&#8217;m pretty certain it will be a form of generated infographics based on the prices I&#8217;ve been scraping from the <a href='http://www.magictraders.com/pricelists/'>Magic Online Traders League price guide</a> nightly. Look for it soon!</p></div>
+                </div>
+            </div>
+
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                28 Jan 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="/potw/2011/01/28/Week4-prefixer.html" title="permalink">Week 4:  Prefixer</a></div>
+                    <div class="post-body"><p>This summer, I&#8217;d love to acquire an internship (or similar role in other projects) that allows me to work with a team because, although I&#8217;m relatively comfortable developing by myself, I feel learning the ability to work with others can help me achieve the next level of development-fu. Although I don&#8217;t know <em>exactly</em> where I would like to help, I&#8217;ve been looking through various postings on sites like <a href='http://news.ycombinator.com/jobs'>Hacker News</a> to see which postings look promising for a tinkerer like myself. Although my dream of acquiring a position in one of the awesome companies fostered by YCombinator et al might be a bit lofty, I figure there&#8217;s no harm in trying! At the very least, applications for various companies or startups often involve solving a nifty puzzle, so I&#8217;m all for that. :)</p>
+
+<p>The <a href='http://jobs.justin.tv/software-engineer-intern.html'>software engineering internship</a> at <a href='http://justin.tv'>justin.tv</a> has a set of interesting problems to tackle as part of its application process. For this week&#8217;s project, I decided to figure out how to solve <a href='http://www.justin.tv/problems/prefixer'>technical challenge 2</a>, an infix to prefix arithmetic expression converter. This challenge was particularly exciting to me because I have a secret obsession with scheme (more on that another day) and feel it would be beneficial to convert the masses to the computational love that is prefix notation. (For the uninformed, prefix notation looks like + 3 2 instead of 3 + 2).</p>
+
+<p><code>USAGE:  ./prefixer (-r) INFIX_FILE</code></p>
+
+<p>You can download <a href='https://github.com/kfredrichardson/potw/blob/master/prefixer/prefixer'>prefixer on github</a>.</p>
+
+<p>Basically, the script (currently written in php) turns the content of INFIX_FILE into an array of characters and processes groups of numbers according to the orders of operation. (Please -Excuse- My Dear Aunt Sally! &#8230;It&#8217;s not her fault she&#8217;s a gambler&#8230;) Furthermore, it reduces the expression as much as possible if the -r flag is used. My current checking is a bit lazy and won&#8217;t use the distributive property (when non-numeric characters are multiplied, like 3 * (3 + y)), but I figured I&#8217;d save that for prefixer 2.0.</p>
+
+<p>My current solution is written in php, although I may extend my knowledge of ruby or python by rewriting it in one or both of those so-called &#8220;better&#8221; languages. (I don&#8217;t necessarily disagree - I merely find php convenient for hacking together prototypes because I currently know it better than other scripting languages.) I&#8217;m not sure when I&#8217;ll submit my application to justin.tv,but I imagine it might be in a couple of weeks or so after I tighten up this challenge submission. It looks like an <em>amazing</em> place at which to spend a summer so I want to present myself in as best a light as possible.</p>
+
+<p>Although I wouldn&#8217;t necessarily mind traveling to the west coast, especially considering it is where many startup/internship positions are located, I also wouldn&#8217;t mind staying a bit closer to home. If you know of any interesting positions located more towards the east (or in general!), I would appreciate it if you&#8217;d <a href='/about.html'>send me information about them</a>. Thanks!</p></div>
+                </div>
+            </div>
+
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                26 Jan 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="/magic/2011/01/26/mirrodin-besieged-added.html" title="permalink">Mirrodin Besieged Added to Sealed Generator</a></div>
+                    <div class="post-body"><p>Furthermore, I&#8217;ve tweaked a few small features on the site. The static bar on your right provides easy links to my rss (technically atom) feed as well as a link to my twitter and <a href='http://about.me/krichardson' title='my about.me account'>about.me</a> profile. Consequently, I&#8217;ve been exploring Jekyll more and more, and it is fantastic!</p>
+
+<p>Finally, look for my project of the week very soon! Until then, stay classy.</p></div>
+                </div>
+            </div>
+
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                21 Jan 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="/potw/2011/01/21/Week3-EasyAww.html" title="permalink">Week 3:  EasyAww - look at cute pictures. feel better.</a></div>
+                    <div class="post-body"><p>This week&#8217;s project is an experiment in CSS3/HTML5 and overall styling. (Soon enough, it&#8217;s going to be a project in JS, JSON, and some kind of php/ruby backend.) People often like to look at cute pictures but many sites have too much distracting text on them. I feel people want to look at cute pictures and not read walls of text while doing so!</p>
+
+<p>Today, I&#8217;d like to introduce you to <a href='http://www.easyaww.com'>EasyAww.com</a>, the site that lets you take time out of your day to enjoy the simpler (and cuter!) things in life. Soon you will be able to look at images of all sorts of cute things, all appropriately tagged and (perhaps) rateable.</p>
+
+<p>During the course of this week, I worked on creating a design for the site and establishing various ideas of how things will be implemented. Next week, my project is to write various backend functionality including some type of JSON-based API, administration tools, and a form for allowing users to submit their own cute pictures. I&#8217;ve also thought about allowing for Facebook and/or Twitter integration, but those steps are at least a few weeks away.</p>
+
+<p>Look forward to seeing cute images soon! If you have any thoughts, feel free to <a href='/about.html'>let me know</a>.</p></div>
+                </div>
+            </div>
+
+            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                11 Jan 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title"><a href="/potw/2011/01/11/Week2-Bkmrk.html" title="permalink">Week 2:  Bkmrk - Simple Web Bookmarks</a></div>
+                    <div class="post-body"><p>For the past several years, I&#8217;ve had an interest in public, taggable bookmarks. They&#8217;re incredibly useful because they allow you to easily find a specific document, video, etc you may remember <em>years</em> after seeing the original. Furthermore, they&#8217;re also very nice because you can sort your links by intersections of various tags or ideas. Common combinations of ideas are very interesting because they can provide an insight into your true interests which you may otherwise have never known. Sites like <a href='http://del.icio.us'>del.icio.us</a> were integral part of my web life for a long time.</p>
+
+<p>Needless to say, I was a bit bothered when rumors started of del.icio.us&#8217;s inevitable demise. Although I never used the service totally consistently (especially after Yahoo! bought it), I still really liked the simple interface and wealth of data it offered. Articles on <a href='http://news.ycombinator.com'>Hacker News</a> discussed alternatives, but none except <a href='http://pinboard.in/'>Pinboard</a> looked particularly appealing. Upon pondering, I came to the realization the reason I probably did not use del.icio.us as much as I could have was because of the social aspect of the service. Although it&#8217;s interesting and neat to see the commonality between interests of different users and track different trends through posted links, I sometimes like keeping interests to myself and stored in personal information managers versus allowing the entire web to access them.</p>
+
+<p>To sate my appetite for a personal (yet web-accessible) bookmarks manager, I wrote <a href='https://github.com/kfredrichardson/bkmrk'>bkmrk</a> over the course of a few days. It&#8217;s currently quite rough, but it works well enough for my day to day usage. Download a copy and try it out or play with the <a href='http://playground.triageworks.net/bkmrk/bkmrk.php'>demo/test installation</a>.</p>
+
+<p>Be warned, however: it was my full intention for bkmrk to be a personal link manager, so it does not utilize many security precautions. However, you might find it useful to use as an anonymous link sharing script for either the entire world or a small team of trusted individuals. It&#8217;s released under the <a href='https://github.com/kfredrichardson/bkmrk/raw/master/LICENSE'>MIT Zero License</a>, so do with it what you will.</p>
+
+<p>Of course, it&#8217;s still a work in progress. The code is very ugly and inefficient at points, but such is the life of a work in progress. It&#8217;ll be quite interesting to see the state of it in a few months: I intend to convert it fully to HTML5/CSS3 and eventually utilize jQuery to give it additional functionality. One day, it may use local storage abilities to allow a user to save posts should he or she ever not have connection to wherever the script is stored.</p>
+
+<p>If you have any suggestions or problems, <a href='/about.html'>let me know</a>!</p></div>
+                </div>
+            </div>
+
+
+			
+		</div>
+		<div id="footer" class="sg-35 sgParent borderLeft borderRight">
+			<a href="http://nginx.org/" title="powered by nginx web server"><img src="/images/nginx-inside.png" alt="Powered by nginx" /></a>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Licensed"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+			<a rel="license" href="http://romanrm.ru/en/mit-zero" title="software released under MIT-Zero License"><img alt="MIT-Zero License" src="/images/mit-zero.png" /></a>
+			<a href="http://jekyllrb.com/" title="Jekyll powered"><img src="/images/jekyll.png" alt="Jekyll powered" /></a>
+			<a href="http://thesquaregrid.com/" title="powered by squaregrid css framework"><img src="/images/thesquaregrid.png" alt="powered by The Square Grid CSS framework" /></a>
+		</div>
+	</div>
+
+<div id="follow" class="right">
+	<ul class="quicklinks">
+		
+		<li class="iconOnly"><a href="/atom.xml" title="atom feed"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(/images/rssbadge.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="atom feed"><span class="head">ATOM</span></a></li>
+
+		<li class="iconOnly"><a href="http://www.twitter.com/kfredrichardson" title="@kfredrichardson on twitter"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(/images/twitter.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="www.twitter.com/kfredrichardson"><span class="head">@kfredrichardson on twitter</span></a></li>
+
+		<li class="iconOnly"><a href="/about.html" title="email and other contact information"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(images/email.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="email and other contact information"><span class="head">about me</span></a></li>
+	</ul>
+</div>
+</body>
+</html>

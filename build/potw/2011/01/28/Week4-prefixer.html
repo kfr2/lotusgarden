@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Kevin Richardson" />
+	<meta http-equiv="description" content="The subjective and wonderful Internet playground of Kevin Richardson." />
+	<title>Week 4:  Prefixer</title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" media="screen" >
+	<link href="//fonts.googleapis.com/css?family=Crimson+Text:regular" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="/style/squaregrid.css" media="all" />
+	<link rel="stylesheet" href="/style/main.css" media="all" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-21050532-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="container">
+			
+			<div class="sg-35 sgParent">
+				<div id="title" class="sg-35 borderLeft borderRight"><a href="http://kevin.triageworks.net" title="The Lotus Garden homepage">The Lotus Garden</a></div>
+				<div id="navigation" class="sg-35 borderLeft borderRight">
+					<div class="nav" id="aboutnav"><a href="about.html" title="about Kevin Richardson">about</a></div>
+					<div class="nav" id="projectsnav"><a href="projects.html" title="Kevin Richardon's projects">projects</a></div>
+					<div class="nav" id="archivesnav"><a href="archives.html" title="archives">archives</a></div><div class="nav"><a href="http://playground.triageworks.net/bkmrk/bkmrk.php" title="bkmrk">bkmrk</a></div>
+				</div>
+			</div>
+			
+		            <div class="sg-35 sgParent">
+                <div class="date sg-2 borderRight">
+                28 Jan 2011
+                </div>
+
+                <div class="post sg-27">
+                    <div class="post-title">Week 4:  Prefixer</div>
+                    <div class="post-body"><p>This summer, I&#8217;d love to acquire an internship (or similar role in other projects) that allows me to work with a team because, although I&#8217;m relatively comfortable developing by myself, I feel learning the ability to work with others can help me achieve the next level of development-fu. Although I don&#8217;t know <em>exactly</em> where I would like to help, I&#8217;ve been looking through various postings on sites like <a href='http://news.ycombinator.com/jobs'>Hacker News</a> to see which postings look promising for a tinkerer like myself. Although my dream of acquiring a position in one of the awesome companies fostered by YCombinator et al might be a bit lofty, I figure there&#8217;s no harm in trying! At the very least, applications for various companies or startups often involve solving a nifty puzzle, so I&#8217;m all for that. :)</p>
+
+<p>The <a href='http://jobs.justin.tv/software-engineer-intern.html'>software engineering internship</a> at <a href='http://justin.tv'>justin.tv</a> has a set of interesting problems to tackle as part of its application process. For this week&#8217;s project, I decided to figure out how to solve <a href='http://www.justin.tv/problems/prefixer'>technical challenge 2</a>, an infix to prefix arithmetic expression converter. This challenge was particularly exciting to me because I have a secret obsession with scheme (more on that another day) and feel it would be beneficial to convert the masses to the computational love that is prefix notation. (For the uninformed, prefix notation looks like + 3 2 instead of 3 + 2).</p>
+
+<p><code>USAGE:  ./prefixer (-r) INFIX_FILE</code></p>
+
+<p>You can download <a href='https://github.com/kfredrichardson/potw/blob/master/prefixer/prefixer'>prefixer on github</a>.</p>
+
+<p>Basically, the script (currently written in php) turns the content of INFIX_FILE into an array of characters and processes groups of numbers according to the orders of operation. (Please -Excuse- My Dear Aunt Sally! &#8230;It&#8217;s not her fault she&#8217;s a gambler&#8230;) Furthermore, it reduces the expression as much as possible if the -r flag is used. My current checking is a bit lazy and won&#8217;t use the distributive property (when non-numeric characters are multiplied, like 3 * (3 + y)), but I figured I&#8217;d save that for prefixer 2.0.</p>
+
+<p>My current solution is written in php, although I may extend my knowledge of ruby or python by rewriting it in one or both of those so-called &#8220;better&#8221; languages. (I don&#8217;t necessarily disagree - I merely find php convenient for hacking together prototypes because I currently know it better than other scripting languages.) I&#8217;m not sure when I&#8217;ll submit my application to justin.tv,but I imagine it might be in a couple of weeks or so after I tighten up this challenge submission. It looks like an <em>amazing</em> place at which to spend a summer so I want to present myself in as best a light as possible.</p>
+
+<p>Although I wouldn&#8217;t necessarily mind traveling to the west coast, especially considering it is where many startup/internship positions are located, I also wouldn&#8217;t mind staying a bit closer to home. If you know of any interesting positions located more towards the east (or in general!), I would appreciate it if you&#8217;d <a href='/about.html'>send me information about them</a>. Thanks!</p></div>
+					<div class="post-nav">
+				        
+      
+	      				
+					</div>
+                </div>
+            </div>
+
+
+			
+		</div>
+		<div id="footer" class="sg-35 sgParent borderLeft borderRight">
+			<a href="http://nginx.org/" title="powered by nginx web server"><img src="/images/nginx-inside.png" alt="Powered by nginx" /></a>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Licensed"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+			<a rel="license" href="http://romanrm.ru/en/mit-zero" title="software released under MIT-Zero License"><img alt="MIT-Zero License" src="/images/mit-zero.png" /></a>
+			<a href="http://jekyllrb.com/" title="Jekyll powered"><img src="/images/jekyll.png" alt="Jekyll powered" /></a>
+			<a href="http://thesquaregrid.com/" title="powered by squaregrid css framework"><img src="/images/thesquaregrid.png" alt="powered by The Square Grid CSS framework" /></a>
+		</div>
+	</div>
+
+<div id="follow" class="right">
+	<ul class="quicklinks">
+		
+		<li class="iconOnly"><a href="/atom.xml" title="atom feed"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(/images/rssbadge.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="atom feed"><span class="head">ATOM</span></a></li>
+
+		<li class="iconOnly"><a href="http://www.twitter.com/kfredrichardson" title="@kfredrichardson on twitter"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(/images/twitter.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="www.twitter.com/kfredrichardson"><span class="head">@kfredrichardson on twitter</span></a></li>
+
+		<li class="iconOnly"><a href="/about.html" title="email and other contact information"><img src="/images/blank.png" height="24" width="24" style="background: transparent url(images/email.png) no-repeat;padding:0;margin:0;height:24px;width:24px;" alt="email and other contact information"><span class="head">about me</span></a></li>
+	</ul>
+</div>
+</body>
+</html>
