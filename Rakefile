@@ -4,7 +4,7 @@ task :default => :deploy
 
 desc "build the site with jekyll"
 task :build do
-	sh "jekyll"
+	sh "jekyll . ./_site"
 end
 
 desc "clean"
