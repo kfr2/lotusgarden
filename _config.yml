@@ -4,4 +4,4 @@ destination:    ./_site
 base_url:       http://kevin.triageworks.net
 description:    "The Projects and Musings of Kevin Richardson"
 
-exclude:        [newpost.sh, .git/]
+exclude:        [newpost.sh, Rakefile, README.md, .git/]
