@@ -21,7 +21,8 @@ Fortunately, the api provides great [examples](http://api.imgur.com/examples#upl
 My version of the script is [available on GitHub](https://github.com/kfredrichardson/potw/blob/master/imgurbash.sh).
 
 Usage is pretty easy.  Modify the apikey variable towards the top of the file to reflect your own developer key.  After that, merely invoke the script:
-	./imgurbash.sh file-to-upload
+
+`./imgurbash.sh file-to-upload`
 
 My intention is to write a wrapper script in Ruby around this shell script that will manage the 50 uploads/hour limit, insert the resulting image information into the database, etc.  It shouldn't be too hard to achieve on your own, but feel free to [contact me](/about.htm) if you need help.
 
