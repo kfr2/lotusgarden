@@ -5,9 +5,9 @@ category: archives
 ---
 <div class="spacer sg-2"></div>
 <div class="post sg-30">
-	<dt>
+	<ul>
 	{% for post in site.posts %}
-		<dd><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></dd>
+		<li><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></li>
 	{% endfor %}
-	</dt>
+	</ul>
 </div>
