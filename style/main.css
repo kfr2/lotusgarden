@@ -15,7 +15,7 @@ p{
 
 p+p{ margin-top: 1em; }
 
-body{ font-family: 'Puritan', sans-serif; background-color: #C0C0C0; }
+body{ font-family: 'Nobile', sans-serif; background-color: #C0C0C0; }
 
 blockquote{
 	color: #000000;
@@ -36,7 +36,7 @@ code{
 #title{
 	background: #000000 url("/images/banner-1.png") no-repeat right;
 	color: #ffffff;
-	font-family: 'Puritan', sans-serif;
+	font-family: 'Nobile', sans-serif;
 	font-size: 3em;
 	text-align: center;
 	margin: 0px;
