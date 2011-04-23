@@ -1,6 +1,5 @@
 a{ color: #7A378B; text-decoration: none; }
-/*a:hover{ background-color: #7A378B; color: #FFFFFF; }*/
-a:hover{ font-weight: bold; } 
+a:hover{ text-decoration: underline; } 
 a:active{ color: #D6E3EF; background-color: #CED3F0; }
 a:em{ text-decoration: underline; font-style: normal; font-weight: normal; }
 p{
