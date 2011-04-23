@@ -2,6 +2,7 @@ a{ color: #7A378B; text-decoration: none; }
 a:hover{ text-decoration: underline; } 
 a:active{ color: #D6E3EF; background-color: #CED3F0; }
 a:em{ text-decoration: underline; font-style: normal; font-weight: normal; }
+
 p{
 	padding: none;
 	margin: none;
@@ -42,13 +43,20 @@ code{
 	line-height: 50px;
 	height: 50px; 
 }
+
 #navigation{
 	background-color:  #E8DAF8;
 	padding-right: 10px;
 	padding-left: 10px;
 }
 
-.nav{ float: left; width: 24%; text-align: center; padding-left: 10px; }
+.nav{
+	float: left;
+	width: 24%; 
+	text-align: center;
+	padding-left: 10px;
+	font-size: 120%;
+}
 
 body#about div#aboutnav,
 body#archives div#archivesnav,
@@ -138,5 +146,12 @@ li{
 }
 
 li.iconOnly{ float: right; }
+
+li.iconOnly:hover{
+	-webkit-transform: rotate(15deg) scale(1.1);
+	-moz-transform: rotate(15deg) scale(1.1);
+	-ms-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+}
 
 li.iconOnly a span.head {display:none}
