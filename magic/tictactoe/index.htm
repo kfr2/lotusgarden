@@ -1,0 +1,92 @@
+<!doctype html>
+<!--TODO
+* wins/losses/ties statistics for each side
+* ability to reset board?
+* something that makes it pop - AI? -->
+<html>
+    <head>
+        <title>Determine the Fate of Mirrodin Tic Tac Toe!</title>
+        <meta charset="utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style/main.css" />
+        <script type="text/javascript" src="scripts/tictactoe.js">
+        </script>
+    </head> 
+    <body onLoad="load()">
+		<header>
+			<div id="announcementSpan">
+				<h2 id="announcement">Battle for Control of Mirrodin!</h2>
+			</div>
+        </header>
+
+        <div id="mainSpan">
+
+            <div id="sideSelection">
+                <div class="mirranFaction" onClick="chooseSide('Mirrodin');">
+                    <figure>
+                        <img id="mirrodinIcon" src="images/mirran_symbol.png" title="Choose Mirrodin!" />
+                        <figcaption>Mirrodin</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="phyrexianFaction" onClick="chooseSide('Phyrexia');">
+                    <figure>
+                        <img id="phyrexiaIcon" src="images/phyrexia_symbol.png" title="Choose Phyrexia!" />
+                        <figcaption>Phyrexia</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+			<h3 id="turnInfo">It is Mirran's turn!</h3>
+
+        	<table id="gameboard">
+            	<tr>
+                	<td id="r00" onClick="playerMove('r00')">&nbsp;</td>
+                	<td id="r01" onClick="playerMove('r01')">&nbsp;</td>
+                	<td id="r02" onClick="playerMove('r02')">&nbsp;</td>
+           		</tr>
+          	  	<tr>
+               		<td id="r10" onClick="playerMove('r10')">&nbsp;</td>
+                	<td id="r11" onClick="playerMove('r11')">&nbsp;</td>
+                	<td id="r12" onClick="playerMove('r12')">&nbsp;</td>
+            	</tr>
+            	<tr>
+                	<td id="r20" onClick="playerMove('r20')">&nbsp;</td>
+                	<td id="r21" onClick="playerMove('r21')">&nbsp;</td>
+                	<td id="r22" onClick="playerMove('r22')">&nbsp;</td>
+            	</tr>
+			</table>
+		</div>
+
+		<div id="topRight">
+			<h2 id="reportTitle">War Report</h2>
+			<table>
+				<tr>
+					<td>Phyrexia</td>
+					<td id="phyrexiaScore">0</td>
+				</tr>
+				<tr>
+					<td>Mirrodin</td>
+					<td id="mirrodinScore">0</td>
+				</tr>
+				<tr>
+					<td>Draws</td>
+					<td id="drawScore">0</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="middleRight">
+			<a href="javascript:newGame()" title="reset the game"><img src="images/reset-icon-1.png" height="100" width="100" alt="reset the game!" id="reset-icon" onMouseOver="swapResetOn()" onClick="swapResetClick()" onMouseOut="swapResetOff()" /></a>
+		</div>
+
+        <div id="bottomRight">
+			<a href="http://kevin.triageworks.net" title="Kevin Richardson's homepage">
+				<img src="images/d6.png" width="100" height="100" />
+			</a>
+		</div>
+
+		<footer>
+		</footer>
+    </body>
+</html>

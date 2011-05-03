@@ -1,0 +1,16 @@
+TicTacToe todo
+==============
+- add scoring table
+- highlight winning rows in some form of red/blue glow?
+- add CSS3 animations:
+ * slowly increase amount of color in phyrexian/mirranBackground div
+ * some kind of animation when the player is selecting his/her faction
+
+- calculate best place to put next piece and store in a table.
+- select piece to move based on highest value in this table
+- examines each empty position for following:
+ 	* 2 of own pieces existing in this position's row (horizontal, vertical, or diagonally): 1.0
+	 * if 2 of opp's pieces exist in this position's row:  0.9
+	 * place piece next to one of our own:  0.5
+	 * place piece next to one of the opp's: 0.5
+	 * fill in a piece at random

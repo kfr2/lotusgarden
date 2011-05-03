@@ -1,0 +1,240 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'MedievalSharp', arial, serif;
+	background-image: url("../images/wood.jpg");
+	background-position: 0% 0%;	
+	margin: 0 auto;
+}
+
+header {
+	display: block;
+
+	height: 170px;
+	width: 75%;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url("../images/header-background.jpg");
+	background-position: 0% 0%;
+
+	border: 2px #000 outset;
+	-moz-border-radius-topright: 25px;
+	-moz-border-radius-topleft: 25px;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px; 
+}
+
+#announcementSpan {
+	-webkit-animation-name: flowover;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes flowover {
+	from {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 0.1;
+		-webkit-transform: scale(0.5) rotate(180deg);
+	}
+
+	to {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		ocapity: 1;
+		-webkit-transform: scale(1) rotate(0deg); 
+	}
+}
+
+#announcement {
+	color: #FFFFFF;
+	text-shadow: #FF0000 0px 0px 10px;
+	text-align: center;
+	font-size: 300%;
+
+	line-height: 170px;
+	width: 100%;
+}
+
+#mainSpan {
+	display: block;
+
+	border: 2px #000 outset;
+	width: 75%;
+	height: 75%;
+
+	padding-top: 2%;
+	padding-bottom: 4%;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url("../images/parchment.jpg");
+	background-position: 0% 0%;
+	opacity: 0.8;
+}
+
+#turnInfo {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px; 
+	font-size: 150%;
+	text-align: center;
+}
+
+#turnInfo img {
+	width: 100px;
+	height: 150px;
+}
+
+#sideSelection {
+	display: none;
+
+	width: 50%;
+	height: 430px;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 200%;
+}
+
+#gameboard {
+	height: 385px;
+	width: 512px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px #000 outset;
+
+	background: url("../images/gameboard-background.jpg") no-repeat center;
+}
+
+#gameboard tr td {
+	width: 171px;
+	height: 121px;
+	border: 2px #CCC dotted;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.mirranFaction {
+	text-align: center;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mirranFaction:hover {
+	cursor: pointer;
+	background-color: #737BAA;
+	border: 4px #000 solid;
+}
+
+.phyrexianFaction {
+	text-align: center;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.phyrexianFaction:hover {
+	cursor: pointer;
+	background-color: #BB3F35;
+	border: 4px #000 solid;
+}
+
+.mirranBackground {
+	background-color: #737BAA;
+	background-image: url("../images/mirran_icon.png");
+	background-repeat: no-repeat;	
+	background-position: center;
+	cursor: default;
+}
+
+.phyrexianBackground {
+	background-color: #BB3F35;
+	background-image: url("../images/phyrexia_icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: default;
+}
+
+.winner {
+	-webkit-box-shadow: inset 0 0 5px 5px #7A378B;
+	-moz-box-shadow: inset 0 0 5px 5px #7A378B;
+	box-shadow: inset 0 0 5px 5px #7A378B;
+}
+
+
+#gameboard tr td:hover {
+	border: 3px #0000FF groove;
+}
+
+#reportTitle {
+	color: #660000;
+	text-decoration: underline;
+}
+
+#topRight {
+	background-image: url("../images/parchment.jpg");
+	border: 3px #844D18 groove;
+
+	float: right;
+	position: absolute;
+	bottom: 65%;
+	right: 0%;
+	width: 10%;
+}
+
+#topRight table {
+	width: 100%;
+}
+
+#middleRight {
+	float: right;
+	position: absolute;
+	bottom: 25%;
+	right: 2%;
+}
+
+#bottomRight {
+	float: right;
+	position: absolute;
+	bottom: 1%;
+	right: 2%;
+}
+
+#middleRight:hover, #bottomRight:hover {
+	background-color: #7a378b;
+	border: 2px #000 solid;
+}
+
+figcaption {
+	display: block;
+	text-align: center;
+}
+
+footer{
+	display: block;
+
+	height: 50px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+
+	background-image: url("../images/footer-background.jpg");
+	background-position: 0% 0%;
+
+	border: 2px #000 outset;
+}
