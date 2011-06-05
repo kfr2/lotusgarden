@@ -258,7 +258,7 @@ function display_content($deck_id)
 function display_menu()
 {
 	print("<div class=\"menu\" id=\"menu\">");
-	print("<strong>3 Packs of Scars of Mirrodin and 3 Packs of Mirrodin Besieged.</strong><br />");
+	print("<strong>3 Packs of Scars of Mirrodin and 3 Packs of New Phyrexia.</strong><br />");
 	print("<i>Some convictions are so strong that the world must break to accommodate them.</i><br /><br />");
 	print("<a href=\"http://kevin.triageworks.net\">Kevin's home page</a> | <a href=\"/magic/sealed/\">sealed generator</a> | ");
 	print("<a href=\"/magic/tictactoe/\">tictactoe</a>");

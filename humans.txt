@@ -7,8 +7,9 @@ Contact:		kevin [at] triageworks [dot] net
 Twitter:		@kfredrichardson
 Github:			kfredrichardson
 Interests:		games, data, plain text, simplicity, basic colors,
-				beautiful software and code, web apps, Ruby, exploring,
-				hacking, cute animals, sandwiches
+			beautiful software and code, web apps, Ruby, exploring,
+			hacking, cute animals, sandwiches, viewing great designs
+See also:	easyaww.com, 99wishes.com, magically.us
 
 /* SITE */
 Last update:		{{ site.time }}	 
