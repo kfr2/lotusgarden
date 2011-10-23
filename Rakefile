@@ -2,9 +2,15 @@
 
 task :default => :deploy
 
+
 desc "build the site with jekyll"
 task :build do
 	sh "jekyll . ./_site"
+end
+
+desc "upload the generated files to NearlyFreeSpeech"
+task :upload do
+	sh "rsync -avz --delete -e ssh ./_site krichardson_lotusgarden@ssh.phx.nearlyfreespeech.net:/home/public/"
 end
 
 desc "clean"
@@ -28,8 +34,8 @@ task :push do
 	sh "git push"
 end
 
-desc "build site then deploy to github"
-task :deploy => [ :add, :build, :push ] do
+desc "build site, upload to NearlyFreeSpeech, then deploy to github"
+task :deploy => [ :add, :build, :upload, :push ] do
 	sh "working..."
 end
 
