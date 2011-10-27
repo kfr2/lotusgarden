@@ -1,7 +1,7 @@
 source:         .
 destination:    ./_site
 
-base_url:       http://kevin.triageworks.net
+base_url:       http://kevin.magically.us
 description:    "The Projects and Musings of Kevin Richardson"
 
 exclude:        [newpost.sh, Rakefile, README.md, .git/]

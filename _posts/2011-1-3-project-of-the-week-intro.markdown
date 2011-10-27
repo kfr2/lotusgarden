@@ -15,6 +15,6 @@ As said by Bailer,
 Not all of my projects will be web-based, but I imagine many of them will be.  In my opinion, web applications will become much more prevalent over the next few years as people do away with more traditional style of computers and computing.  I also really love microformats and microdata while believing whole heartedly in having small applications that do one thing very well, so perhaps some of my 
 experimentation will be along the lines of integrating useful data from all over the web.
 
-This journey will surely be quite interesting, so I hope you're as ready as I am!  Feel free to take what I create and extend it in your own way. Moreover, if you have any suggestions for projects past or present, feel free to [contact me](http://kevin.triageworks.net/about.html).
+This journey will surely be quite interesting, so I hope you're as ready as I am!  Feel free to take what I create and extend it in your own way. Moreover, if you have any suggestions for projects past or present, feel free to [contact me](http://kevin.magically.us/about.html).
 
 Godspeed.
