@@ -10,7 +10,7 @@ end
 
 desc "upload the generated files to NearlyFreeSpeech"
 task :upload do
-	sh "rsync -avz --delete -e ssh ./_site/* krichardson_lotusgarden@ssh.phx.nearlyfreespeech.net:/home/public/"
+	sh "rsync -avz --delete --links -e ssh ./_site/* krichardson_lotusgarden@ssh.phx.nearlyfreespeech.net:/home/public/"
 end
 
 desc "clean"
