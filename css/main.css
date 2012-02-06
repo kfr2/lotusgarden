@@ -66,7 +66,7 @@ code{
 
 .nav{
 	float:         left;
-	width:         32%;
+	width:         24%;
 	text-align:    center;
 	padding-left:  10px;
 	font-size:     120%;
@@ -126,6 +126,10 @@ body#projects div#projectsnav {
 	text-shadow:  1px 1px 1px #000;
 }
 .post-body{ }
+
+.post-nav{
+    text-decoration:    overline;
+}
 
 
 #follow.right {
