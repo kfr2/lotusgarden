@@ -1,0 +1,48 @@
+<html><head><title>web database scaling</title></head><body><a href='index.htm'>Notes Home</a><hr><h3>scaling up</h3>
+
+<ul>
+<li>adding more hardware to a single machine</li>
+</ul>
+
+
+<h3>scaling out</h3>
+
+<ul>
+<li>adding more machines to db cluster</li>
+<li>architecture types:
+
+<ol>
+<li>master/slave (http://dl.dropbox.com/u/7030113/Screenshots/0.png)
+
+<ul>
+<li>increased read speed</li>
+<li>takes read off master</li>
+<li>allows joins across all tables</li>
+<li>doesn't increase write throughput</li>
+<li>single point of failure in master node</li>
+</ul>
+</li>
+<li>sharding (http://dl.dropbox.com/u/7030113/Screenshots/1.png)
+
+<ul>
+<li>splitting data among obvious boundaries (geographical, etc)</li>
+<li>increase write and read throughput</li>
+<li>no single point of failure</li>
+<li>cannot join queries between shards</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+
+<h2>ACID</h2>
+
+<ol>
+<li>Atomic</li>
+<li>Consistent</li>
+<li>Isolated</li>
+<li>Durable</li>
+</ol>
+
+</body></html>

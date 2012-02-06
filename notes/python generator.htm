@@ -1,0 +1,13 @@
+<html><head><title>python generator</title></head><body><a href='index.htm'>Notes Home</a><hr><p>import random</p>
+
+<p>def lottery():</p>
+
+<pre><code>for i in xrange(6):
+    yield random.randint(1, 40)
+</code></pre>
+
+<p>for random_number in lottery():</p>
+
+<pre><code>print "num: %d" % random_number
+</code></pre>
+</body></html>

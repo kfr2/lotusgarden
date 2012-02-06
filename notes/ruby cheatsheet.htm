@@ -1,0 +1,218 @@
+<html><head><title>ruby cheatsheet</title></head><body><a href='index.htm'>Notes Home</a><hr><h3>Special values</h3>
+
+<p>nil = no value
+Check for nil with nil? method, such as: if name.nil?</p>
+
+<h3>Comments</h3>
+
+<p>Begin with #</p>
+
+<h3>Constants</h3>
+
+<p>Start with a capital letter, like: Constant</p>
+
+<h3>Symbols</h3>
+
+<p>Lightweight objects, beginning with a colon.  Best used for comparisons and internal logic. 
+Use in place of strings for performance reasons for anything that's not displayed to the user.</p>
+
+<h3>Arrays and hashes</h3>
+
+<p>a = [1, 2, 3]
+empty = []
+empty = Array.new
+empty &lt;&lt; "new item"</p>
+
+<p>food = {</p>
+
+<pre><code>'fruit' =&gt; 'orange',
+'vegetable' =&gt; 'broccoli'
+</code></pre>
+
+<p>}</p>
+
+<p>histogram = Hash.new(0)</p>
+
+<h3>Method declaration</h3>
+
+<p>def hi</p>
+
+<pre><code>puts "Hello world"
+</code></pre>
+
+<p>end</p>
+
+<p>Call with hi() or just hi.  Parentheses are not necessary if method has no arguments.
+Method name may end with ? ! or =</p>
+
+<ul>
+<li>= indicates a setter.</li>
+<li>? returns a boolean that answers the question.</li>
+<li>! indicates that you should be cautious calling that version of the method because it may be destructive (such as sort!which is in-place, rather than regular sort, which copies)</li>
+</ul>
+
+
+<h3>Method with argument</h3>
+
+<p>def hi(name)</p>
+
+<pre><code>puts "Hello #{name}"
+</code></pre>
+
+<p>end</p>
+
+<p>hi("Steve")</p>
+
+<h3>Class declaration</h3>
+
+<p>class Greeter</p>
+
+<pre><code>def initialize(name = "World")
+    @name = name
+end
+
+def say_hi
+    puts "Hi #{@name}"
+end
+
+def say_bye
+    puts "Bye #{@name}"
+end
+
+def return_zero
+    return 0
+end
+</code></pre>
+
+<p>end
+In the above:
+@name is an instance variable
+@@foo is a class variable</p>
+
+<h3>Instantiation and use</h3>
+
+<p>g = Greeter.new("Steve")
+g.say_hi
+g.say_bye</p>
+
+<h3>Class and object introspection</h3>
+
+<p>Greeter.instance_methods returns an array of every method offered by the class, including inherited methods.
+Greeter.instance_methods(false) returns just the methods defined in the subclass.
+g.respond_to?("say_hi") determines if the object responds to the named method.
+myObject.is_a?(Integer) to determine class of object</p>
+
+<h3>Instance variable accessors</h3>
+
+<p>class Greeter</p>
+
+<pre><code>attr_accessor :name
+</code></pre>
+
+<p>end
+Allows you to get the value of name with the name method and set it with the name= method.
+attr_reader for read-only, attr_writer for write-only</p>
+
+<h3>Subclassing</h3>
+
+<p>class Student &lt; Human
+end</p>
+
+<h3>Conditional structure</h3>
+
+<p>if expression</p>
+
+<pre><code>stuff
+</code></pre>
+
+<p>elsif</p>
+
+<pre><code>other stuff
+</code></pre>
+
+<p>else</p>
+
+<pre><code>other stuff
+</code></pre>
+
+<p>end</p>
+
+<h3>While loop</h3>
+
+<p>while weight &lt; 100 and numPallets &lt;= 30</p>
+
+<pre><code>weight += 1
+</code></pre>
+
+<p>end</p>
+
+<h3>List iteration</h3>
+
+<p>names.each do |name|</p>
+
+<pre><code>puts "Hello #{name}"
+</code></pre>
+
+<p>end
+each is a method that accepts a code block (the bit between do and end)</p>
+
+<h3>Code blocks</h3>
+
+<p>{ puts "Hello" }</p>
+
+<p>do</p>
+
+<pre><code>puts "Hello"
+</code></pre>
+
+<p>end
+yield statement executes a code block:
+def callBlock</p>
+
+<pre><code>yield
+yield
+</code></pre>
+
+<p>end</p>
+
+<p>callBlock { puts "Hello" }
+Results in:
+Hello
+Hello</p>
+
+<h3>Joining string list elements</h3>
+
+<p>names.join(", ")</p>
+
+<h3>Regular expression matching</h3>
+
+<p>if line =~ /Perl|Python/</p>
+
+<pre><code>puts "Scripting language mentioned: #{line}"
+</code></pre>
+
+<p>end</p>
+
+<h3>Regular expression replacing</h3>
+
+<p>line.sub(/Perl/, 'Ruby') # replace first
+line.gsub(/Python/, 'Ruby') # replace every</p>
+
+<h3>Ranges</h3>
+
+<p>(1..3) is the numbers 1 through 3
+(0...5) is the numbers 0 through 4</p>
+
+<h3>Heredocs</h3>
+
+<p>puts &lt;&lt;EOF</p>
+
+<pre><code>Blah
+Blah
+Blah
+</code></pre>
+
+<p>EOF</p>
+
+<p><em>Stolen from <a href="http://stevenf.com/notes/index.php/?Ruby+cheat+sheet">Steven Frank's notes</a></em></p>
+</body></html>

@@ -1,0 +1,22 @@
+<html><head><title>ruby array methods</title></head><body><a href='index.htm'>Notes Home</a><hr><p>array.collect/map do |i|
+  i + 1
+end</p>
+
+<p>array.select do |i|
+  i % 2 == 0
+end</p>
+
+<p>array.delete(elem)
+array.delete_if do |i|
+  i &lt; 4
+end</p>
+
+<p>array.inject("initial") do |memo, elem|
+  memo + elem
+end</p>
+
+<p>array.each_slice(2) { |a, b| out &lt;&lt; [a, b] }
+  [1, 2] [3, 4] [5, 6] [7, 8]
+array.each_cons(2) ...
+  [1, 2] [2, 3] [3, 4] [4, 5]</p>
+</body></html>

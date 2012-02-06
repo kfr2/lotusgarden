@@ -1,0 +1,147 @@
+<html><head><title>python summary</title></head><body><a href='index.htm'>Notes Home</a><hr><h2>operators</h2>
+
+<ul>
+<li>squared = 7 ** 2</li>
+<li>remainder = 7 % 2</li>
+<li>string = "hello " + "world"</li>
+<li>lotsOfStrings = string * 10 # hello world hello world hello world...</li>
+</ul>
+
+
+<h2>lists (array)</h2>
+
+<ul>
+<li>list = [1, 2, 3]</li>
+<li>list.append(4)  # [1, 2, 3, 4]</li>
+</ul>
+
+
+<h2>dictionary (hash table)</h2>
+
+<ul>
+<li>phonebook = {}</li>
+<li>phonebook["John"] = 123456789</li>
+<li>phonebook["Tim"] = 213456789</li>
+</ul>
+
+
+<p>phonebook = {</p>
+
+<pre><code>"John" : 123456789,
+"Tim": 213456789
+</code></pre>
+
+<p>}</p>
+
+<p>del phonebook["John"]</p>
+
+<p>for name, number in phonebook.iteritems():</p>
+
+<pre><code>...
+</code></pre>
+
+<h2>string formatting</h2>
+
+<p>mylist = [1, 2, 3]
+print "A list: %s" % my list</p>
+
+<p>%s - String
+%d - integer
+%f - floating point num
+%.(n)f - floating point with n digits to right of decimal
+%x/%X - integers in hex rep (lowercase/uppercase)</p>
+
+<h2>casting</h2>
+
+<p>int(x)
+float(x)
+str(x)</p>
+
+<h2>conditionals</h2>
+
+<ul>
+<li>True/False</li>
+<li>and/or</li>
+<li>if item in list:
+  print "item is in list"</li>
+<li>if / elif / else</li>
+<li>is operator -- determines if two variables point to same object</li>
+<li>not -- inverts following boolean expression</li>
+</ul>
+
+
+<h2>loops</h2>
+
+<h1>returns a new list with specific numbers</h1>
+
+<p>primes = [2,3,5,7]
+for prime in primes:</p>
+
+<pre><code>print prime
+</code></pre>
+
+<h1>returns an iterator (more efficient)</h1>
+
+<h1>0, 1, 2, 3</h1>
+
+<p>for x in xrange(3):</p>
+
+<pre><code>print x
+</code></pre>
+
+<h1>3, 4, 5</h1>
+
+<p>for x in xrange(3,6)</p>
+
+<pre><code>print x
+</code></pre>
+
+<ul>
+<li>break -- used to exit a for or while loop</li>
+<li>continue -- skip the current block and return to the "for" or "while" statement</li>
+</ul>
+
+
+<h2>functions</h2>
+
+<p>def my_function(fName, lName):</p>
+
+<pre><code>print "Hello, %s %s" % (fName, lName)
+</code></pre>
+
+<p>def sum(a, b):</p>
+
+<pre><code>return a + b
+</code></pre>
+
+<p>def list(*numbers):</p>
+
+<pre><code># variable num of args
+print "list: %s" % numbers
+</code></pre>
+
+<p>def list(**options):</p>
+
+<pre><code>if options.get("action") == "sum":
+    # do something
+if options.get("return") == "first":
+    return first
+</code></pre>
+
+<p>def method(var = "default value"):</p>
+
+<pre><code>print var
+</code></pre>
+
+<h2>classes/objects</h2>
+
+<p>class MyClass:</p>
+
+<pre><code>variable = "hello"
+
+def function(self):
+    print "This is a class function."
+</code></pre>
+
+<p>myObject = MyClass()</p>
+</body></html>
