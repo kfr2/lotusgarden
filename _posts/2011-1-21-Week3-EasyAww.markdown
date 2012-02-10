@@ -12,5 +12,5 @@ During the course of this week, I worked on creating a design for the site and e
 Look forward to seeing cute images soon!  If you have any thoughts, feel free to [let me know](/about.html).
 
 
-
-
+**Update (2012-02-09):**
+Although it was a wonderful learning experience, EasyAww is currently defunct.
