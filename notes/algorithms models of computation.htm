@@ -38,6 +38,19 @@ seen in theory of computation and compiler design classes</p>
 <li>the allowable alphabet/symbols (sigma)</li>
 <li>may have a set of final states (F)</li>
 <li>set of transitions [state, symbol, new-state] (T)</li>
+<li>for every combination of state and symbol, end in one state</li>
+</ul>
+
+
+<h1>NFA</h1>
+
+<ul>
+<li>for every combination of state and symbol, end in a number of states
+
+<ul>
+<li>if ending in a  final state, the symbol exists in the language</li>
+</ul>
+</li>
 </ul>
 
 
@@ -59,7 +72,7 @@ seen in theory of computation and compiler design classes</p>
 </ul>
 
 
-<h1>context-free language</h1>
+<h1>context-free language in terms of expressiveness</h1>
 
 <h2>context-free grammar (CFG)</h2>
 
@@ -69,6 +82,9 @@ seen in theory of computation and compiler design classes</p>
 <li>nice because it is more powerful and expressive</li>
 <li>worse because it is more complicated</li>
 <li>can be rewritten from any regular expression
+
+<h2>deterministic PDA</h2></li>
+<li>less powerful than PDA
 
 <h2>pushdown automata (PDA)</h2></li>
 <li>accepts strings</li>
