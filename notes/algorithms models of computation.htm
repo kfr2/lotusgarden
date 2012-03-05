@@ -91,6 +91,13 @@ seen in theory of computation and compiler design classes</p>
 <li>similar to a finite automaton except it has a stack</li>
 <li>pushdown are nondeterministic</li>
 <li>deterministic pushdown automaton are much less powerful</li>
+<li>L(g) = set of strings derived from G
+
+<ul>
+<li>E -> E + E | E - E | E * E | E / E | (E) | #</li>
+</ul>
+</li>
+<li>can be written out using a derivation tree/expression tree</li>
 </ul>
 
 
@@ -99,6 +106,21 @@ seen in theory of computation and compiler design classes</p>
 <ul>
 <li>large list of context-free grammar that is translated through YACC/BISON that implements a deterministic pushdown automata</li>
 <li>various parsing techniques were created as a result</li>
+<li>parsing problem - how can we tell if a given string can be produced by a grammar</li>
+<li>lexical analysis -- grouping items together into tokens
+
+<ul>
+<li>a string of characters is grouped into a string of tokens</li>
+</ul>
+</li>
+<li>problems:  can have multiple expression trees to derive a certain string -- lends to ambiguity which is bad from a compilation standpoint
+
+<ul>
+<li>E -> T | E + T | E - T</li>
+<li>T -> F | T * F | T / F</li>
+<li>F -> (E) | #</li>
+</ul>
+</li>
 </ul>
 
-<footer><hr><em>Last modified: 2012-02-09 12:24:02 -0500</em></footer></body></html>
+<footer><hr><em>Last modified: 2012-02-23 13:03:03 -0500</em></footer></body></html>

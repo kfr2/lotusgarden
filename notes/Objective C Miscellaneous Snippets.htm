@@ -1,0 +1,13 @@
+<html><head><title>Objective C Miscellaneous Snippets</title></head><body><a href='index.htm'>Notes Home</a><hr><p>correct usage of NSLog:</p>
+
+<pre><code>NSLog(@"%@", [myObject stringRepresentation]);
+</code></pre>
+
+<p>creating an alert:</p>
+
+<pre><code>        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check your username." message:@"Usernames must be at least 4 characters long." delegate:nil cancelButtonTitle:@"Okay." otherButtonTitles:nil];
+    [alert show];
+</code></pre>
+
+<p>closing keyboard with "done/enter/etc" keys:</p>
+<footer><hr><em>Last modified: 2012-03-03 16:08:40 -0500</em></footer></body></html>
