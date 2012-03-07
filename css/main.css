@@ -148,9 +148,4 @@ li{
 }
 
 li.iconOnly{ float: right; }
-
-li.iconOnly:hover {
-	transform: rotate(15deg) scale(1.1);
-}
-
 li.iconOnly a span.head { display:none; }
