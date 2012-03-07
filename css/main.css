@@ -7,15 +7,10 @@ a:active{
   color:             #D6E3EF;
   background-color:  #CED3F0;
 }
-a:em{
-  text-decoration: underline;
-  font-style: normal;
-  font-weight: normal;
-}
 
 p{
-	padding:      none;
-	margin:       none;
+	padding:      0px;
+	margin:       0px;
 	text-indent:  25px;
 	display:      block;
 	font-size:    18px;
@@ -98,7 +93,7 @@ body#projects div#projectsnav {
 	border-right:      none;
 	background-color:  #7A378B;
 	color:             #FFFFFF;
-	padding:           none;
+	padding:           0px;
 	text-align:        center;
   filter:            alpha(opacity=60);
   -moz-opacity:      0.6;
