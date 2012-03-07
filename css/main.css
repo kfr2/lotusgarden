@@ -77,9 +77,6 @@ body#projects div#projectsnav {
 	background-color:  white;
 	height:            500px;
 	margin-top:        14px;
-	filter:            alpha(opacity=30);
-	-moz-opacity:      0.3;
-	-khtml-opacity:    0.3;
 	opacity:           0.3;
 }
 #footer{
@@ -95,10 +92,7 @@ body#projects div#projectsnav {
 	color:             #FFFFFF;
 	padding:           0px;
 	text-align:        center;
-  filter:            alpha(opacity=60);
-  -moz-opacity:      0.6;
-  -khtml-opacity:    0.6;
-  opacity:           0.6;
+    opacity:           0.6;
 }
 
 .post{
@@ -106,12 +100,7 @@ body#projects div#projectsnav {
 	margin-top:          0px;
 	margin-left:         0px;
 	padding:             6px;
-	filter:              alpha(opacity=60);
-	-moz-opacity:        0.6;
-	-khtml-opacity:      0.6;
 	opacity:             0.6;
-	-webkit-box-shadow:  5px 5px 5px #666;
-	-moz-box-shadow:     5px 5px 5px #666;
 	box-shadow:          5px 5px 5px #666;
 }
 .post-title{
@@ -160,11 +149,8 @@ li{
 
 li.iconOnly{ float: right; }
 
-li.iconOnly:hover{
-	-webkit-transform:  rotate(15deg) scale(1.1);
-	-moz-transform:     rotate(15deg) scale(1.1);
-	-ms-transform:      rotate(15deg) scale(1.1);
-	transform:          rotate(15deg) scale(1.1);
+li.iconOnly:hover {
+	transform: rotate(15deg) scale(1.1);
 }
 
-li.iconOnly a span.head {display:none}
+li.iconOnly a span.head { display:none; }
