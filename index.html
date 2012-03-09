@@ -2,14 +2,15 @@
 layout: default
 title: The Lotus Garden &middot; Projects and Musings of Kevin Richardson
 ---
-{% for post in site.posts limit:5 %}
-            <div class="sg-35 sgParent">
-                <div class="date sg-2 borderRight">
-                {{ post.date | date_to_string }}
-                </div>
-
-                <div class="post sg-30">
+{% for post in site.posts limit:3 %}
+            <div class="row post">
+                <div class="pre_2 col_10">
                     <div class="post-title"><a href="{{ post.url }}" title="permalink">{{ post.title }}</a></div>
+                </div>
+                <div class="pre_2 col_10">
+                    <div class="post-date">{{ post.date | date_to_string }}</div>
+                </div>
+                <div class="pre_2 col_8 suf_2">
                     <div class="post-body">{{ post.content }}</div>
                 </div>
             </div>

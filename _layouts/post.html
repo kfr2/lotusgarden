@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-            <div class="sg-35 sgParent">
-                <div class="date sg-2 borderRight">
-                {{ page.date | date_to_string }}
+            <div class="row post">
+                <div class="pre_2 col_10">
+                    <div class="post-title"><a href="{{ page.url }}" title="permalink">{{ page.title }}</a></div>
                 </div>
-
-                <div class="post sg-30">
-                    <div class="post-title">{{ page.title }}</div>
+                <div class="pre_2 col_10">
+                    <div class="post-date">{{ page.date | date_to_string }}</div>
+                </div>
+                <div class="pre_2 col_8 suf_2">
                     <div class="post-body">{{ content }}</div>
-					<div class="post-nav">
-                        Feel free to <a href="/about.html" title="about Kevin">contact me</a>!
-					</div>
+                </div>
+                <div class="pre_2 col_10 last">
+                    <div class="post-nav">Feel free to <a href="/about.html" title="about Kevin">contact me</a>!</div>
                 </div>
             </div>
-

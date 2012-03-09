@@ -3,11 +3,17 @@ title: Archives of Kevin Richardson's Thoughts and Projects
 layout: default
 category: archives
 ---
-<div class="spacer sg-2"></div>
-<div class="post sg-30">
-	<ul>
-	{% for post in site.posts %}
-		<li><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></li>
-	{% endfor %}
-	</ul>
-</div>
+            <div class="row post">
+                <div class="pre_2 col_10">
+                    <div class="post-title">Archives of The Lotus Garden</div>
+                </div>
+                <div class="pre_2 col_8 suf_2">
+                    <div class="post-body">
+                        <ul>
+                        {% for post in site.posts %}
+                        <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> on {{ post.date | date_to_string }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>

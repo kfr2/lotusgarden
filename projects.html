@@ -3,29 +3,27 @@ layout: default
 title: Kevin Richardson's Projects & Neat Doo-Dads
 category: projects
 ---
-            <div class="sg-35 sgParent">
-                <div class="spacer sg-2 borderRight">
+            <div class="row post">
+                <div class="pre_2 col_10">
+                    <div class="post-title">A Sampling of Kevin Richardson's Projects</div>
                 </div>
-
-                <div class="post sg-30">
-                    <div class="post-title">Kevin Richardson's Projects</div>
-	    <div class="post-body">
-			<ul>
-                <li><h1><a href="/notes/" title="Notational Notes">Notational Notes</a></h1></li>
-		    	<li><h1><a href="/magic/index.htm" title="Miscellaneous Magic: the Gathering Applications">miscellaneous Magic:the Gathering applications</a></h1></li>
-    			<li><h1><a href="/dmhelper/dmhelper.htm" title="Dungeon Master Helper">Dungeon Master Helper</a></h1></li>
-<h1>Project of the Week</h1>
-<a href="http://kevin.magically.us/potw/2011/01/03/project-of-the-week-intro.html" title="Project of the Week Introduction">introduction</a>
-
-<ul>
-        {% for post in site.categories.potw %}
-	{% if post.title != "Project of the Week Introduction" %}
-	<li><h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4></li>
-	{% endif %}
-	{% endfor %}
-        </ul>
-</div>
-
-
-</div>
+                <div class="pre_2 col_8 suf_2">
+                    <div class="post-body">{{ post.content }}</div>
+			            <ul>
+                            <li><a href="/notes/" title="Notational Notes">Notational Notes</a></li>
+            		    	<li><a href="/magic/index.htm" title="Miscellaneous Magic: the Gathering Applications">miscellaneous Magic:the Gathering applications</a></li>
+                            <li><a href="/dmhelper/dmhelper.htm" title="Dungeon Master Helper">Dungeon Master Helper</a></li>
+                            <li><a href="https://github.com/kfredrichardson/" title="Kevin Richardson on GitHub">GitHub profile</a></li>
+                        </ul>
+                        
+                        <h1>Project of the Week</h1>
+                        <a href="http://kevin.magically.us/potw/2011/01/03/project-of-the-week-intro.html" title="Project of the Week Introduction">introduction</a>
+                        <ul>
+                            {% for post in site.categories.potw %}
+                                {% if post.title != "Project of the Week Introduction" %}
+                                    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                </div>
             </div>
