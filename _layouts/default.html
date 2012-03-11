@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+    <title>Kevin Richardson | {{ page.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="Kevin Richardson">
-    <meta name="description" content="The subjective and wonderful Internet playground of Kevin Richardson.">
+    <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ page.title }}</title>
+    <meta property="og:title" content="Kevin Richardson | {{ page.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ page.image_url }}">
+    <meta property="og:url" content="{{ site.url }}{{ post.url }}{{ page.url }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:site_name" content="Kevin Richardson | The Lotus Garden">
     <link type="text/plain" rel="author" href="/humans.txt">
-    <link href='http://fonts.googleapis.com/css?family=Nobile:400,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    <link rel="canonical" href="{{ site.url }}{{ post.url }}{{ page.url }}">
+    <link href="http://fonts.googleapis.com/css?family=Nobile:400,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/columnal.css" media="screen">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="/css/ie.css" media="screen">
@@ -16,7 +23,7 @@
     <link rel="stylesheet" href="/css/build.css" media="screen">
     <link rel="stylesheet" href="/css/main.css" media="screen">
     <link rel="shortcut icon" href="favicon.ico">
-	<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
 </head>
 
 <body>
@@ -36,8 +43,8 @@
         {{ content }}
         
         <footer class="row">
-            <div class="pre_1 col_2"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Licensed"><img alt="Creative Commons License" style="border-width:0" src="/img/creativecommons.png" /></a></div>
-            <div class="pre_1 col_2"><a rel="license" href="http://romanrm.ru/en/mit-zero" title="software released under MIT-Zero License"><img alt="MIT-Zero License" src="/img/mit-zero.png" /></a></div>
+            <div class="pre_1 col_2"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" title="article content is released under a Creative Commons Licensed"><img alt="Creative Commons License" style="border-width:0" src="/img/creativecommons.png" /></a></div>
+            <div class="pre_1 col_2"><a rel="license" href="" title="software released under an Unlicense"><img alt="Unlicense" src="/img/unlicense.png" /></a></div>
             <div class="pre_1 col_2"><a href="http://jekyllrb.com/" title="Jekyll powered"><img src="/img/jekyll.png" alt="Jekyll powered" /></a></div>
             <div class="pre_1 col_2 last"><a href="http://columnal.com/" title="powered by columnal css framework"><img src="/img/columnal.png" alt="powered by the Columnal CSS framework" /></a></div>
         </footer>
