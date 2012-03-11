@@ -5,9 +5,9 @@ image_url: http://kevin.magically.us/img/nocopyright.png
 description: The subjective and wonderful Internet playground of Kevin Richardson.
 ---
 {% for post in site.posts limit:3 %}
-            <div class="row post">
+            <article class="row post">
                 <div class="pre_2 col_10">
-                    <div class="post-title"><a href="{{ post.url }}" title="permalink">{{ post.title }}</a></div>
+                    <div class="post-title"><a href="{{ post.url }}" title="permalink to '{{ post.title }}'">{{ post.title }}</a></div>
                 </div>
                 <div class="pre_2 col_10">
                     <div class="post-date">{{ post.date | date_to_string }}</div>
@@ -15,5 +15,5 @@ description: The subjective and wonderful Internet playground of Kevin Richardso
                 <div class="pre_2 col_8 suf_2">
                     <div class="post-body">{{ post.content }}</div>
                 </div>
-            </div>
+            </article>
 {% endfor %}
