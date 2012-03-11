@@ -10,7 +10,7 @@ description: The subjective and wonderful Internet playground of Kevin Richardso
                     <div class="post-title"><a href="{{ post.url }}" title="permalink to '{{ post.title }}'">{{ post.title }}</a></div>
                 </div>
                 <div class="pre_2 col_10">
-                    <div class="post-date">{{ post.date | date_to_string }}</div>
+                    <div class="post-date"><time datetime="{{ page.date }}">{{ post.date | date_to_string }}</time></div>
                 </div>
                 <div class="pre_2 col_8 suf_2">
                     <div class="post-body">{{ post.content }}</div>
