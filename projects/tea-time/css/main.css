@@ -1,0 +1,19 @@
+.alert {
+    color: #ff0000;
+}
+
+.ui-content {
+    background-color: #000000;
+}
+
+.ui-btn-text {
+    height: 55px;
+}
+
+.ui-footer {
+    text-align: center;
+}
+
+#temp, #time {
+    text-align: center;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tea Time!</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="author" content="Kevin Richardson">
+        <meta name="description" content="A jQuery-mobiled powered tea steeping timer.">
+        <meta name="keywords" content="tea,teas,timer,steeping,black,white,green,herbal,oolong,mate,rooios,chai">
+        <link type="text/plain" rel="author" href="http://kevin.magically.us/humans.txt">
+        <meta name="viewport" content="width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon-114x114.png">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script>
+            // Defines the time (in seconds) at which to change the font to its alert mode.
+            var flash_time = 15;
+            function seconds_to_time(sec)
+            {
+                var minutes = (Math.floor(sec / 60)).toString();
+                var seconds = (sec % 60).toString();
+
+                if(seconds.length == 1)
+                {
+                    seconds = "0" + seconds;
+                }
+
+                return minutes + ":" + seconds;
+            }
+
+            $(document).ready(function() {
+                var time;
+                var steep_time;
+                var steep_temp;
+
+                // Store the intervals that will be set for easy access.
+                var flash, countdown;
+
+                // Hide the reset button by default.
+                $("#reset-time").css("display", "none");
+
+                // Loads information into the timer when a tea is selected.
+                $("a[href=#timer]").bind("click", function() {
+                    steep_time = $(this).data("steep-time");
+                    steep_temp = $(this).data("steep-temp");
+
+                    time = steep_time;
+
+                    $("#time").html(seconds_to_time(steep_time));
+                    $("#temp").html("@ " + steep_temp);
+                });
+
+                // Start button click handler.
+                $("#start-time").bind("click", function() {
+                    // Switch start button/reset button visibility.
+                    $("#start-time").css("display", "none");
+                    $("#reset-time").css("display", "block");
+
+                    // Reset button click handler.
+                    $("#reset-time").bind("click", function() {
+                        // Reset the clock's time and color
+                        clearInterval(flash);
+                        clearInterval(countdown);
+                        $("#time").stop();
+                        $("#time").show();
+                        time = steep_time;
+                        $("#time").html(seconds_to_time(time));
+                        $("#time").removeClass("alert");
+
+                        // Switch to start button.
+                        $("#reset-time").css("display", "none");
+                        $("#start-time").css("display", "block");
+                    }); // end reset button click handler
+
+                    // Controls the "countdown" aspect of the form.
+                    // It will decrement time every second.
+                    countdown = setInterval(function() {
+                        $("#time").html(seconds_to_time(--time));
+
+                        // Change color when at flash_time seconds.
+                        if(time <= flash_time) {
+                            $("#time").addClass("alert");
+                        }
+
+                        // Flash time when it has run out.
+                        if(time == 0) {
+                            clearInterval(countdown);
+
+                            flash = setInterval(function() {
+                                $("#time").fadeToggle();
+                            }, 250);
+                        }
+                    }, 1000);
+                }); // end start button click handler
+            });
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="main">
+            <header data-role="header">
+                <h1>Tea Time!</h1>
+            </header>
+
+            <div data-role="content">
+                <!-- the list of teas/drinks to display -->
+                <!-- TODO: work into an array/etc for easy localStorage modification -->
+                <ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="180" data-steep-temp="206F">
+                        <img src="img/black.png" alt="black tea icon">
+                        <h2>Black</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop"data-steep-time="60" data-steep-temp="175F" >
+                        <img src="img/green.png" alt="green tea icon">
+                        <h2>Green</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="30" data-steep-temp="175F">
+                        <img src="img/white.png" alt="white tea icon">
+                        <h2>White</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="300" data-steep-temp="208F">
+                        <img src="img/herbal.png" alt="herbal tea icon">
+                        <h2>Herbal</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="180" data-steep-temp="195F">
+                        <img src="img/oolong.png" alt="oolong tea icon">
+                        <h2>Oolong</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="360" data-steep-temp="208F">
+                        <img src="img/mate.png" alt="mate tea icon">
+                        <h2>Mate</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="300" data-steep-temp="208F">
+                        <img src="img/rooibos.png" alt="rooibos tea icon">
+                        <h2>Rooibos</h2>
+                    </a></li>
+                    <li><a href="#timer" data-rel="dialog" data-transition="pop" data-steep-time="600" data-steep-temp="206F">
+                        <img src="img/chai.png" alt="chai tea icon">
+                        <h2>Chai</h2>
+                    </a></li>
+                </ul>
+            </div>
+
+            <footer data-role="footer" data-theme="a">
+            <h3>developed by <a href="http://kevin.magically.us" title="Kevin Richardson's homepage">Kevin Richardson</a></h3>
+            </footer>
+        </div>
+
+        <div data-role="page" id="timer">
+            <header data-role="header">
+                <h1>Steep it!</h1>
+            </header>
+
+            <div data-role="content">
+                <h1 id="time">time value</h1>
+                <h3 id="temp">@ temp value</h3>
+                <a href="#" id="start-time" data-role="button" data-theme="a">start</a>
+                <a href="#" id="reset-time" data-role="button" data-theme="b">reset</a>
+            </div>
+        </div>
+    </body>
+</html>
