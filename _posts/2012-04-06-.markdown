@@ -1,0 +1,9 @@
+---
+layout: post
+title: "jQuery Mobile-based Tea Timer"
+categories: 
+image_url:http://kevin.magically.us/projects/tea-time/img/apple-touch-icon-114x114.png
+description:Introduces a jQuery Mobile-based Tea Timer web application. 
+---
+Finding myself with a mostly-free afternoon, today I decided to create a [jQuery Mobile-based Tea Timer application](http://kevin.magically.us/projects/tea-time/).  Use it to monitor the steeping time and temperature of your favorite teas.
+It's pretty easily extendable and can be turned into any number of desired timers.  Have fun!
