@@ -31,6 +31,12 @@ EOS
     sh "`echo $EDITOR #{path}`"
 end
 
+
+desc "run jekyll's local development server"
+task :s do
+  sh "jekyll --server"
+end
+
 desc "build the site with jekyll"
 task :build do
   sh "jekyll . ./_site"
