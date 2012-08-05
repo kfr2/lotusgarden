@@ -9,7 +9,7 @@ The [software engineering internship](http://jobs.justin.tv/software-engineer-in
 
 `USAGE:  ./prefixer (-r) INFIX_FILE`
 
-You can download [prefixer on github](https://github.com/kfredrichardson/potw/blob/master/prefixer/prefixer).
+You can download [prefixer on github](https://github.com/kfr2/potw/blob/master/prefixer/prefixer).
 
 Basically, the script (currently written in php) turns the content of INFIX_FILE into an array of characters and processes groups of numbers according to the orders of operation.  (Please -Excuse- My Dear Aunt Sally! ...It's not her fault she's a gambler...)  Furthermore, it reduces the expression as much as possible if the -r flag is used.  My current checking is a bit lazy and won't use the distributive property (when non-numeric characters are multiplied, like 3 * (3 + y)), but I figured I'd save that for prefixer 2.0.
 

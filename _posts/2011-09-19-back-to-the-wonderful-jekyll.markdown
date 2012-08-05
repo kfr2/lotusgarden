@@ -14,7 +14,7 @@ otherwise light on information -- would function just fine if its files were sta
 as security is increased, leaving one feel "warm and fuzzy" inside not needing to worry about opening up additional areas for potential exploitation by using dynamic technologies.
 Jekyll accomplishes my goals in this area wonderfully by generating all the HTML files necessary for a site to operate based on a few, simple templates and various text-files containing
 each post.  Stemming from this architecture, it's very easy to backup the site in its entirety as it is mostly text files with a small amount of special markup called [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).
-If you are so inclined, check out [this website's GitHub repository](https://github.com/kfredrichardson/lotusgarden) to further understand the structure I've placed behind it.
+If you are so inclined, check out [this website's GitHub repository](https://github.com/kfr2/lotusgarden) to further understand the structure I've placed behind it.
 
 Although I never know *exactly* what to do with my personal websites, this one will likely turn into a mild "portfolio" type presentation to showcase various applications
 I've built or other projects I've worked on.  My year is turning out to be quite busy, so reports and code are forthcoming.  Until then, have a wonderful day!

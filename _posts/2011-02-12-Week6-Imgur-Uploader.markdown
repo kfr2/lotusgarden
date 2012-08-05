@@ -18,7 +18,7 @@ Fortunately, the api provides great [examples](http://api.imgur.com/examples#upl
 2. Searched for image hash and deletehash instead of the link to the original image and delete page (since all the other necessary URIs can be generated form the image hash).
 3. Instead of outputting to stdout and stderr, opted to output a sql insert statement that will be combined with another small script to add information to a sqlite database.
 
-My version of the script is [available on GitHub](https://github.com/kfredrichardson/potw/blob/master/imgurbash.sh).
+My version of the script is [available on GitHub](https://github.com/kfr2/potw/blob/master/imgurbash.sh).
 
 Usage is pretty easy.  Modify the apikey variable towards the top of the file to reflect your own developer key.  After that, merely invoke the script:
 

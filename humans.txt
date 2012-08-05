@@ -4,16 +4,15 @@ layout: nil
 Kevin Richardson
 ================
 Contact:        kevin [at] magically [dot] us
-Twitter:        @kfredrichardson
-Github:         kfredrichardson
-Interests:      games, data, plain text, simplicity, basic colors,
+Twitter:        @kfr_2
+Github:         kfr2
+Interests:      games, data, plain text, simplicity, Python,
                 beautiful software and code, web apps, Ruby, exploring,
                 hacking, cute animals, sandwiches, viewing great designs
-See also:       http://magically.us
 
 /* SITE */
 Last update:    {{ site.time }}	 
 Language:       English
 Doctype:        HTML5 with CSS3
-Tools:          Jekyll, Ruby, GitHub, rsync, OSX, Clean Writer Pro
-IDE:            Vim
+Tools:          OSX, Ruby, Jekyll, GitHub, rsync, Clean Writer Pro, tea
+IDE:            Sublime Text 2
