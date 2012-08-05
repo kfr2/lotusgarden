@@ -5,21 +5,21 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>magically.us - Projects and Musings of Kevin Richardson</title>
-	<link href="http://kevin.magically.us/atom.xml" rel="self"/>
-	<link href="http://kevin.magically.us/"/>
+	<link href="http://magically.us/atom.xml" rel="self"/>
+	<link href="http://magically.us/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://kevin.magically.us/</id>
+	<id>http://magically.us/</id>
 	<author>
 		<name>Kevin Richardson</name>
-        <uri>http://kevin.magically.us</uri>
+        <uri>http://magically.us</uri>
 	</author>
 
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
-		<link href="http://kevin.magically.us{{ post.url }}"/>
+		<link href="http://magically.us{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>http://kevin.magically.us{{ post.id }}</id>
+		<id>http://magically.us{{ post.id }}</id>
 		<content type="html">{{ post.content | xml_escape }}</content>
 	</entry>
 	{% endfor %}

@@ -1,8 +1,8 @@
 source:         .
 destination:    ./_site
 
-base_url:       http://kevin.magically.us
-url:            http://kevin.magically.us
+base_url:       http://magically.us
+url:            http://magically.us
 description:    "The Projects and Musings of Kevin Richardson"
 
 exclude:        [Rakefile, README.md, .git/]
